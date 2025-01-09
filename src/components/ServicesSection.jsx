@@ -6,7 +6,7 @@ export default function ServicesSection() {
   return (
     <section className='relative mt-40' id='services'>
       <CustomTitle title='¿Qué ofrezco?'/>
-      <section className='relative grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 p-16 mt-32'>
+      <section className='relative grid sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-5 p-16 mt-32'>
         <header className='absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#007cda]
           via-[#785ae4] to-primary opacity-20 blur-[100px] left-10 top-0 hidden md:block'>
         </header>
@@ -18,7 +18,7 @@ export default function ServicesSection() {
             key={item.id} 
             initial={{opacity:0,y:50}}
             whileInView={{opacity:1,y:0}}
-            transition={{duration:0.8,ease:'easeOut', delay:index*0.5}}
+            transition={{duration:0.8,ease:'easeOut', delay:index*0.1}}
             viewport={{once:true, amount:0.5}}
             className='relative w-full h-[350px] p-5 grid place-items-center overflow-hidden rounded-[20px] shadow-lg'
           >
@@ -26,7 +26,7 @@ export default function ServicesSection() {
               <header className='border border-primary bg-[#ffffff29] rounded-xl p-3 mb-6 min-h-full min-w-full flex items-center'>
                 <section className='mt-4 space-y-4 px-2'>
                   <h2 className='uppercase text-lg md:text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-br from-primary to-secondary'>{item.title}</h2>
-                  <p className='md:text-lg text-white opacity-80'>{item.description}</p>
+                  <p className='md:text-sm text-white opacity-80'>{item.description}</p>
                 </section>
               </header>
             </section>

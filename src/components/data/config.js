@@ -1,6 +1,8 @@
 const animationDuration=2;
 import logoEsmeralda from '../../assets/EsmeraldaLogo.png';
 import logoInpelsa from '../../assets/logoInpelsa.png';
+import certificadoHenry from '../../assets/certificadoHenry.png';
+
 export const variants = {
     initial:{
         pathLength: 0,
@@ -182,4 +184,46 @@ export const education=[
         details:'Somos una academia experta en carreras de tecnología con foco en la práctica y la empleabilidad. Potenciamos el talento de las personas para conectarlas con las demandas del mercado laboral. Creemos que todas las personas deberían tener la oportunidad de incorporar herramientas digitales, construir carreras con futuro y ser parte de las compañías más prometedoras de Latinoamérica y el mundo. Aprende las habilidades más demandadas por el mercado. Accede a capacitaciones, workshops y un acompañamiento personalizado para tu búsqueda laboral.',
         icon:'https://www.soyhenry.com/_next/static/media/HenryLogo.bb57fd6f.svg'
     },
+]
+
+export const projects=[
+    {
+        id:1,
+        title:'Proyecto 1',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia?',
+        imgUrl:certificadoHenry,
+    },
+    {
+        id:2,
+        title:'Proyecto 2',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia?',
+        imgUrl:certificadoHenry,
+    },
+    {
+        id:3,
+        title:'Proyecto 3',
+        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia?',
+        imgUrl:certificadoHenry,
+    },
+]
+
+export const contactData=[
+    {
+        id:1,
+        title:'Dirección',
+        description:'Av. Pedro Silva 1030, San Juan de Miraflores, Lima, Peru.',
+        icon:'https://img.icons8.com/ios-filled/50/ffffff/address--v1.png',
+    },
+    {
+        id:2,
+        title:'Telefono',
+        description:'+511 949101509',
+        icon:'https://img.icons8.com/ios-filled/50/ffffff/phone--v1.png',
+    },
+    {
+        id:3,
+        title:'Correo Electronico',
+        description:'sistemas.cavr@13elfuturohoy.com',
+        icon:'https://img.icons8.com/pastel-glyph/50/ffffff/new-post--v1.png',
+    }
 ]
