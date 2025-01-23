@@ -26,7 +26,7 @@ export default function ContactUs() {
               </body>
             </html>
           `;
-          const response = await axios.post('http://localhost:3000/send-email', {
+          const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/send-email`, {
             name: formData.name,
             from: formData.email,
             subject: 'Formulario de contacto Web CAVR',
