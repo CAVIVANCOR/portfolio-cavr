@@ -10,7 +10,6 @@ import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import BackToTop from "./components/BackToTop";
 function App() {
-
   return (
     <>
       <ThreeBackground />
@@ -25,7 +24,7 @@ function App() {
       <Footer/>
       <BackToTop/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

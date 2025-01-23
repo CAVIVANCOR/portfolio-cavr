@@ -37,14 +37,14 @@ const SkillsCircle = ({ skill, percentage, icon }) => {
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 2, ease: "easeInOut" }}
         />
-    </svg>
-    <motion.div className="absolute flex flex-col items-center justify-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      </svg>
+      <motion.div className="absolute flex flex-col items-center justify-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <img src={icon} alt={skill} className="w-10 h-10 mb-1" />
         <p className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-br from-primary to-secondary">
         {percentage}%
         </p>
-    </motion.div>
-    <motion.p className="text-center text-xs font-extralight">{skill}</motion.p>
+      </motion.div>
+      <motion.p className="text-center text-xs font-extralight">{skill}</motion.p>
     </motion.article>
   );
 };
@@ -52,8 +52,8 @@ const SkillsCircle = ({ skill, percentage, icon }) => {
 export default function SkillsSection() {
   return (
     <section className="relative mt-40" id="skills">
-      <CustomTitle title="Mis Habilidades" />
-      <section className="grid grid-cols-2 md:grid-cols-5 gap-6 lg:gap-8 p-16 text-white mt-32">
+      <CustomTitle><span>Habilidades</span></CustomTitle>
+      <section className="grid grid-cols-2 md:grid-cols-5 gap-6 lg:gap-8 p-16 text-white mt-10">
         <header
           className="absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#007cda]
             via-[#785ae4] to-primary opacity-20 blur-[100px] left-10 top-0 hidden md:block"

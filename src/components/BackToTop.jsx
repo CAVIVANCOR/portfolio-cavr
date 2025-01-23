@@ -7,9 +7,10 @@ export default function BackToTop() {
 
     useEffect(() => {
         return scrollYProgress.onChange((latest) => {
-            setShowButton(latest > 0.5);
+            setShowButton(latest > 0);
         });
     }, [scrollYProgress]);
+    
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
@@ -20,7 +21,7 @@ export default function BackToTop() {
   <>
   {showButton && (
       <button onClick={scrollToTop}
-        className="fixed bottom-8 right-8 bg-transparent text-primary p-3 rounded-full shadow-lg transition-colors z-[150]
+        className="fixed bottom-6 right-3 bg-[#3d392f] text-primary p-3 rounded-full shadow-lg transition-colors z-[150]
         flex items-center justify-center" aria-label='scroll to top' style={{width:'50px',height:'50px'}}>
             <motion.div className='absolute inset-0' style={{transform:'rotate(-90deg)'}}>
                 <svg width={50} height={50} viewBox="0 0 36 36">
@@ -30,7 +31,7 @@ export default function BackToTop() {
                         />
                 </svg>
             </motion.div>
-            <span className='text-xl relative z-[150]'>î</span>
+            <span className='text-3xl relative z-[150]'>↑</span>
         </button>
 )}
   </>

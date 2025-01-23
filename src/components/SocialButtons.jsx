@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'motion/react';
 import {socialIcons} from './data/config.js';
 export default function SocialButtons() {
@@ -30,8 +29,8 @@ export default function SocialButtons() {
         }
     };
   return (
-    <div className="md:flex flex-col items-center justify-center border border-primary bg-[#ffffff29]
-    rounded-3xl space-y-11 p-3 max-h-[506px] md:max-h-[386px] hidden">
+    <div className="flex flex-row items-center justify-center border border-primary bg-[#ffffff29]
+    rounded-3xl gap-9 mt-5 p-3 max-h-[506px] md:max-h-[386px]">
         {socialIcons.map((icon) => (
             <button key={icon.id}>
                 <svg viewBox={icon.viewBox} width={40} height={40} >

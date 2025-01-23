@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useAnimate, stagger, motion } from 'motion/react'; // Importa motion para usar motion.path
-import logoCerebro from '../assets/logoCerebro13.png';
+import logo13 from '../assets/logoredondoGrande.png';
+import {zoomInVariants} from './data/animation.js';
 const Path = (props) => (
     <path 
         fill='transparent' 
@@ -73,17 +74,17 @@ export default function NavBar() {
     const NavItems = [
         { id: 'services', text: 'Lo que Ofrezco' },
         { id: 'skills', text: 'Mis Habilidades' },
-        { id: 'experience', text: 'Educación & Experiencia' },
+        { id: 'experiencie', text: 'Educación & Experiencia' },
         { id: 'work', text: 'Mi Trabajo' },
         { id: 'contact', text: 'Contáctame' },
     ];
 
     return (
-        <div className="relative flex justify-between px-12 py-2">
+        <div className="fixed top-0 left-0 w-full flex justify-between px-2 md:px-8 py-3 z-50">
             <div ref={scope} className="relative">
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="absolute top-4 z-40 left-4 w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary 
+                    className="absolute top-4 z-40 left-1 w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary 
                     flex items-center justify-center"
                 >
                     <svg width={23} height={18} viewBox="0 0 23 18">
@@ -100,7 +101,7 @@ export default function NavBar() {
                     `}>
                     <ul className="flex flex-col p-6">
                         {NavItems.map((item) => (
-                            <li key={item.id} className="text-white text-4xl font-bold mt-10">
+                            <li key={item.id} className="text-white text-3xl lg:text-4xl md:text-3xl font-bold mt-10">
                                 <a 
                                 href={`#${item.id}`}
                                 onClick={() => handleNavItemClick(item.id)}
@@ -113,10 +114,13 @@ export default function NavBar() {
                 </nav>
             </div>
             <motion.img 
-                src={logoCerebro} 
+                src={logo13} 
                 alt={'Logo'} 
-                className="w-20 rounded-full"
-                whileHover={{ scale: 1.1, transition: { duration: 0.8, repeat: Infinity, ease: 'easeInOut' } }}
+                className="w-20 mt-2 mr-0"
+                initial="hidden"
+                whileInView="visible"
+                variants={zoomInVariants}
+                whileHover={{ scale: 1.5, transition: { duration: 1.5, repeat: Infinity, ease: 'easeInOut' } }}
             />
         </div>
     );

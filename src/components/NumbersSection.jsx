@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useRef, useEffect } from "react";
 import CountUp from "react-countup";
 import { motion } from "motion/react";
@@ -26,7 +27,7 @@ export default function NumbersSection() {
         };
     }, []);
     return (
-        <section className="mx-auto w-full realtive text-white mt-40 flex justify-center">
+        <section className="mx-auto w-full relative text-white m-0 flex justify-center 2xl:mt-2">
             <header className='absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#007cda]
                 via-[#785ae4] to-primary opacity-20 blur-[100px] left-10 top-0 hidden md:block'>
             </header>
@@ -37,10 +38,10 @@ export default function NumbersSection() {
                 ref={sectionRef}
                 initial={{opacity:0, y:50}}
                 whileInView={{opacity:1, y:0}}
-                transition={{duration:0.8, ease:"easeOut"}}
+                transition={{duration:0.9, ease:"easeOut"}}
                 viewport={{once:true, amount:0.5}}
-                className="relative z-1 mx-auto w-11/12 lg:mx-0 p-5 sm:p-6 sm:py-8 rounded-3xl border border-primary bg-[#ffffff29] shadow-lg 
-                md:divide-x divide-primary grid grid-cols-2 md:grid-cols-4 gap-4 dm:gap-8 md:gap-6 lg:gap-12"
+                className="relative z-1 mx-auto w-11/12 lg:mx-0 p-5 sm:p-6 sm:py-4 rounded-3xl border border-primary bg-[#ffffff29] shadow-lg 
+                divide-x divide-primary grid grid-cols-4 md:grid-cols-4 gap-2 lg:gap-12"
                 >
                     {numbers.map((item)=>(
                         <article key={item.id} className="text-center">
@@ -50,13 +51,13 @@ export default function NumbersSection() {
                                         <CountUp
                                             start={0}
                                             end={item.number}
-                                            duration={2.5}
+                                            duration={7.5}
                                             separator=","
                                         />
                                     )}
                                 </h2>
                             </header>
-                            <p className="mt-2">{item.title}</p>
+                            <p className="mx-1 mt-1 font-extralight text-xs md:text-xl">{item.title}</p>
                         </article>
                     ))}
             </motion.section>

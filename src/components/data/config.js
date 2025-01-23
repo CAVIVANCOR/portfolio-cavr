@@ -67,13 +67,8 @@ export const numbers=[
 ]
 
 export const services=[
-    {id:1,title:'Desarrollo Web',description:'Desarrollo de sitios web personalizados para tu negocio o empresa. Desarrollo de sitios web personalizados para tu negocio o empresa.'},
-    {id:2,title:'Diseño Web',description:'Diseño de sitios web personalizados para tu negocio o empresa. Diseño de sitios web personalizados para tu negocio o empresa.'},
-    {id:3,title:'Desarrollo de Aplicaciones Moviles',description:'Desarrollo de aplicaciones móviles personalizadas para tu negocio o empresa. Desarrollo de aplicaciones móviles personalizadas para tu negocio o empresa.'},
-    {id:4,title:'Desarrollo de Aplicaciones a Medida',description:'Desarrollo de aplicaciones a medida para tu negocio o empresa. Desarrollo de aplicaciones a medida para tu negocio o empresa.'},
-    {id:5,title:'Marketing Digital',description:'Marketing digital para tu negocio o empresa. Marketing digital para tu negocio o empresa.'},
-    {id:6,title:'Consultoría',description:'Consultoría para tu negocio o empresa. Consultoría para tu negocio o empresa.'},
-    {id:7,title:'Soporte Técnico',description:'Soporte técnico para tu negocio o empresa. Soporte técnico para tu negocio o empresa.'},
+    {id:1,img:'/1.png',title:'Desarrollo Web Personalizado',description:'Desde la ideación y la planificación hasta el diseño, el desarrollo, las pruebas y la implementación. Nuestra Prioridad es lograr los objetivos del proyecto a pesar de las limitaciones de tiempo y presupuesto, así como de los requisitos cambiantes. Usted establece los objetivos y nosotros impulsamos el proyecto para cumplirlos.'},
+    {id:2,img:'/2.png',title:'Consultoría Informatica',description:'Realizamos un analisis exhaustivo de los sistemas y procesos de tu organizacion para identificar areas de mejora y posibles problemas. Esto incluye evaluar la infraestructura tecnológica, la seguridad de la información y la eficiencia de los flujos de trabajo.' },
 ]
 
 export const skills=[
@@ -210,18 +205,12 @@ export const projects=[
 export const contactData=[
     {
         id:1,
-        title:'Dirección',
-        description:'Av. Pedro Silva 1030, San Juan de Miraflores, Lima, Peru.',
-        icon:'https://img.icons8.com/ios-filled/50/ffffff/address--v1.png',
-    },
-    {
-        id:2,
         title:'Telefono',
         description:'+511 949101509',
         icon:'https://img.icons8.com/ios-filled/50/ffffff/phone--v1.png',
     },
     {
-        id:3,
+        id:2,
         title:'Correo Electronico',
         description:'sistemas.cavr@13elfuturohoy.com',
         icon:'https://img.icons8.com/pastel-glyph/50/ffffff/new-post--v1.png',
