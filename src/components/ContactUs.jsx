@@ -5,7 +5,7 @@ import CustomTitle from "./CustomTitle.jsx";
 import { contactData } from "./data/config";
 import { useState } from "react";
 import axios from "axios";
-
+const urlBackend = import.meta.env.VITE_BACKEND_URL;
 export default function ContactUs() {
     const [formData, setFormData] = useState({
       name: "",
@@ -26,7 +26,7 @@ export default function ContactUs() {
               </body>
             </html>
           `;
-          const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/send-email`, {
+          const response = await axios.post(`${urlBackend}/send-email`, {
             name: formData.name,
             from: formData.email,
             subject: 'Formulario de contacto Web CAVR',
