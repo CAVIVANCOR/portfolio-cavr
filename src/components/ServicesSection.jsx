@@ -6,7 +6,7 @@ export default function ServicesSection() {
   return (
     <section className='relative mt-40' id='services'>
       <CustomTitle><span>Servicios</span></CustomTitle>
-      <section className='relative grid sm:grid-cols-2 lg:grid-cols-3 gap-2 lg:gap-5 p-16 mt-10 '>
+      <section className='relative grid sm:grid-cols-2 lg:grid-cols-2 gap-2 lg:gap-5 p-16 mt-10 '>
         <header className='absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#007cda]
           via-[#785ae4] to-primary opacity-20 blur-[100px] left-10 top-0 hidden md:block'>
         </header>
