@@ -9,7 +9,7 @@ const SectionItem = ({ title, subtitle, year, details, icon }) => {
       className="relative flex flex-col justify-end px-2 gap-3 rounded-lg cursor-pointer before:absolute
         before:inset-[10px] before:rounded-[10px] before:bg-gradient-to-br before:from-primary before:to-secondary before:z-[-10]
         after:absolute after:inset-0 after:bg-gradient-to-br after:from-secondary after:to-primary after:scale-[0.95] after:blur-[20px] 
-        hover:after:blur-[30px] mt-10"
+        hover:after:blur-[30px] mt-8"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5 }}
@@ -17,13 +17,13 @@ const SectionItem = ({ title, subtitle, year, details, icon }) => {
     >
       <section className="bg-black z-20 text-white rounded-xl">
         <section className="border border-primary bg-[#ffffff29] rounded-xl p-2 flex flex-col lg:flex-row items-center">
-            <img src={icon} alt={icon} width={64} height={64} style={{ backgroundColor: 'white', borderRadius: '5%' }} />
-            <div className="ml-2 mt-5 lg:mt-0 lg:ml-10 h-fit">
-            <h3 className="text-xl font-semibold">{title}</h3>
-            <p className="text-sm">{subtitle}</p>
-            <p className="text-sm">{year}</p>
-            {details && <p className="mt-2 text-xs font-light">{details}</p>}
-          </div>
+              <img src={icon} alt={icon} width={128} height={128} style={{ backgroundColor: 'white', borderRadius: '5%' }} />
+            <div className="ml-2 mt-5 lg:mt-0 lg:ml-5">
+              <h3 className="text-xl font-semibold">{title}</h3>
+              <p className="text-sm">{subtitle}</p>
+              <p className="text-sm">{year}</p>
+              {details && <p className="mt-2 text-xs font-light">{details}</p>}
+            </div>
         </section>
       </section>
     </motion.article>
@@ -37,13 +37,8 @@ export default function EducationAndExperience() {
         {window.innerWidth <= 768 && <br />}
         <span>Experiencia</span>
       </CustomTitle>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 p-16 mt-10">
-        <header className='absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#007cda]
-          via-[#785ae4] to-primary opacity-20 blur-[100px] left-10 top-0 hidden md:block'>
-        </header>
-        <header className='absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#007cda]
-          via-[#785ae4] to-primary opacity-20 blur-[100px] right-10 bottom-0 hidden md:block'>
-        </header>
+      <section className="flex flex-wrap justify-center gap-6 lg:gap-8 p-10 mt-10 max-w-lg mx-auto lg:max-w-4xl">
+
         {education.map((edu) => (
           <SectionItem
             key={edu.id}

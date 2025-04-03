@@ -2,7 +2,9 @@ const animationDuration=2;
 import logoEsmeralda from '../../assets/EsmeraldaLogo.png';
 import logoInpelsa from '../../assets/logoInpelsa.png';
 import certificadoHenry from '../../assets/certificadoHenry.png';
-
+import certificadoCibertec from '../../assets/titulo-cavr.jpg';
+import constanciaEsmeralda from '../../assets/constancia-esmeralda.jpg';
+import constanciaInpelsa from '../../assets/constancia-inpelsa.jpg';
 export const variants = {
     initial:{
         pathLength: 0,
@@ -138,7 +140,7 @@ export const skills=[
 export const experience=[
     {
         id:1,
-        title:'Analista de Sistemas Senior',
+        title:'Analista de Sistemas: DESARROLLO ERP PARA NOTARIAS',
         company:'Darma S.A.',
         year:'2003 - 2005',
         description:'Desarrollé con maestría el análisis, diseño e implementación del ERP para notarías, Sistema DARMA de Gestion Notarial y Administrativo desarrollado a la medida contempla todos los servicios notariales, procesos administrativos, utilizando 4D herramienta de programación RAD multiplataforma con base de datos relacional.',
@@ -146,7 +148,7 @@ export const experience=[
     },
     {
         id:2,
-        title:'Jefe de Proyecto',
+        title:'Jefe de Proyecto: DESARROLLO ERP',
         company:'Esmeralda Corp SAC',
         year:'2007 - 2016',
         description:'Fui el líder en el análisis, diseño e implementación del ERP para el grupo de empresas, empleando 4D avanzada herramienta de programación RAD multiplataforma con motor de base de datos relacional. Logré una integración exitosa con el sistema contable financiero AS/400. Implementé con éxito el control integral de almacén WMS con tecnología RFID.',
@@ -154,7 +156,7 @@ export const experience=[
     },
     {
         id:3,
-        title:'Jefe de Proyecto',
+        title:'Jefe de Proyecto: DESARROLLO ERP PROCESOS PRODUCTIVOS',
         company:'Inversiones Pecuarias Lurin S.A.',
         year:'2017 - 2020',
         description:'Dirigí la automatización completa de la empresa, implementando una red VPN en tres sedes y desarrollando hardware y software para equipos industriales. Responsable del diseño y la implementación de todos los procesos productivos, el almacén y los pedidos de venta, tanto en línea como en la oficina, utilizando la versátil herramienta de programación 4D.',    
@@ -169,7 +171,7 @@ export const education=[
         institution:'Instituto de Educación Superior Privado Cibertec S.A.C.',
         year:'1989-1991',
         details:'Cibertec inicia sus actividades en el año 1983 con la finalidad de presentar un proyecto alternativo de formación superior en el campo de la Computación e Informática; hoy Cibertec es el Primer Centro Autorizado de Enseñanza en el Perú. Cibertec es una institución educativa líder en el campo de la tecnología y la informática. Con una sólida trayectoria y un enfoque innovador, Cibertec brinda a sus estudiantes las herramientas necesarias para destacar en un mundo digital en constante evolución.',
-        icon:'https://upload.wikimedia.org/wikipedia/commons/a/ac/CibertecLogo.jpg'
+        icon:certificadoCibertec,
     },
     {
         id:2,
@@ -177,28 +179,22 @@ export const education=[
         institution:'Henry Bootcamp Academia de Desarrollo Web, Buenos Aires, Argentina.',
         year:'2022-2023',
         details:'Somos una academia experta en carreras de tecnología con foco en la práctica y la empleabilidad. Potenciamos el talento de las personas para conectarlas con las demandas del mercado laboral. Creemos que todas las personas deberían tener la oportunidad de incorporar herramientas digitales, construir carreras con futuro y ser parte de las compañías más prometedoras de Latinoamérica y el mundo. Aprende las habilidades más demandadas por el mercado. Accede a capacitaciones, workshops y un acompañamiento personalizado para tu búsqueda laboral.',
-        icon:'https://www.soyhenry.com/_next/static/media/HenryLogo.bb57fd6f.svg'
+        icon: certificadoHenry,
     },
 ]
 
 export const projects=[
     {
         id:1,
-        title:'Proyecto 1',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia?',
-        imgUrl:certificadoHenry,
+        title:'ERP Esmeralda Corp SAC',
+        description:'Fui el líder en el análisis, diseño e implementación del ERP para el grupo de empresas, empleando 4D avanzada herramienta de programación RAD multiplataforma con motor de base de datos relacional. Logré una integración exitosa con el sistema contable financiero AS/400. Implementé con éxito el control integral de almacén WMS con tecnología RFID.',
+        imgUrl:constanciaEsmeralda,
     },
     {
         id:2,
-        title:'Proyecto 2',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia?',
-        imgUrl:certificadoHenry,
-    },
-    {
-        id:3,
-        title:'Proyecto 3',
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quia?',
-        imgUrl:certificadoHenry,
+        title:'ERP Inversiones Pecuarias Lurin S.A.',
+        description:'Dirigí la automatización completa de la empresa, implementando una red VPN en tres sedes y desarrollando hardware y software para equipos industriales. Responsable del diseño y la implementación de todos los procesos productivos, el almacén y los pedidos de venta, tanto en línea como en la oficina, utilizando la versátil herramienta de programación 4D.',
+        imgUrl:constanciaInpelsa,
     },
 ]
 

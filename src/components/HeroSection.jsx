@@ -37,13 +37,13 @@ function HeroSection() {
             <motion.h1
               initial="hidden"
               whileInView={"visible"}
-              transition={{ staggerChildren: 0.015 }}
+              transition={{ staggerChildren: 0.002 }}
               className="mt-24"
             >
               {quienSoyChars.map((char, index) => (
                 <motion.span
                   key={index}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.001 }}
                   variants={charVariants}
                   className="text-white pt-8 text-center lg:text-left mx-auto max-w-[370px] md:max-w-xl text-sm font-extralight md:text-base"
                 >
